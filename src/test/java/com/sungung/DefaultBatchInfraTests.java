@@ -13,7 +13,7 @@ import static junit.framework.TestCase.assertTrue;
  * @author PARK Sungung
  * @since 0.0.1
  */
-public class BatchInfraTests {
+public class DefaultBatchInfraTests {
 
     @Rule
     public OutputCapture outputCapture = new OutputCapture();

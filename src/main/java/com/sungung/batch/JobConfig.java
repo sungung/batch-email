@@ -9,11 +9,13 @@ import org.springframework.batch.core.configuration.annotation.EnableBatchProces
 import org.springframework.batch.core.configuration.annotation.JobBuilderFactory;
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
 import org.springframework.batch.core.configuration.annotation.StepScope;
+import org.springframework.batch.core.launch.support.RunIdIncrementer;
 import org.springframework.batch.item.ItemProcessor;
 import org.springframework.batch.item.ItemReader;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.batch.item.mail.javamail.MimeMessageItemWriter;
 import org.springframework.batch.item.support.IteratorItemReader;
+import org.springframework.batch.test.JobLauncherTestUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -23,6 +25,7 @@ import javax.mail.Message;
 import javax.mail.Session;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+import java.util.List;
 
 /**
  * @author PARK Sungung
@@ -31,6 +34,11 @@ import javax.mail.internet.MimeMessage;
 @Configuration
 @EnableBatchProcessing
 public class JobConfig {
+
+    @Bean
+    public JobLauncherTestUtils jobLauncherTestUtils() {
+        return new JobLauncherTestUtils();
+    }
 
     private static final Log LOG = LogFactory.getLog(JobConfig.class);
 
@@ -50,6 +58,7 @@ public class JobConfig {
     public Job sendEmailJob() {
         return jobBuilderFactory
                 .get("sendEmailJob")
+                .incrementer(new RunIdIncrementer())
                 .listener(sendEmailListener())
                 .start(sendEmailStep())
                 .build();
@@ -59,7 +68,7 @@ public class JobConfig {
     public Step sendEmailStep() {
         return stepBuilderFactory
                 .get("sendEmailStep")
-                .<Brewer, MimeMessage>chunk(1)
+                .<Brewer, MimeMessage>chunk(10)
                 .reader(brewerReader())
                 .processor(brewerToMimeMessageProcessor())
                 .writer(brewerWriter())
@@ -82,12 +91,13 @@ public class JobConfig {
                 LOG.info("   %% After step %%");
                 LOG.info(stepExecution.toString());
                 LOG.info("   %%%%%%%%%%%%%%%%");
-                return ExitStatus.UNKNOWN;  //To change body of implemented methods use File | Settings | File Templates.
+                return ExitStatus.COMPLETED;  //To change body of implemented methods use File | Settings | File Templates.
             }
         };
     }
 
     @Bean
+    @StepScope
     public ItemWriter<MimeMessage> brewerWriter() {
         MimeMessageItemWriter writer = new MimeMessageItemWriter();
         writer.setJavaMailSender(javaMailSender);
@@ -110,11 +120,16 @@ public class JobConfig {
         };
     }
 
+    /**
+     * Reader scope should be in step scope, otherwise your bean will not run the code inside from controller.
+     * Because bean is created when app is started.
+     * @return
+     */
     @Bean
+    @StepScope
     public ItemReader<Brewer> brewerReader() {
-        return new IteratorItemReader<Brewer>(
-            brewerService.findAll(null)
-        );
+        List<Brewer> brewers = brewerService.findAll(null);
+        return new IteratorItemReader<Brewer>(brewers);
     }
 
     @Bean
@@ -122,6 +137,7 @@ public class JobConfig {
         return new JobExecutionListener() {
             @Override
             public void beforeJob(JobExecution jobExecution) {
+
                 LOG.info("******** Before Job ********");
                 LOG.info(jobExecution.toString());
                 LOG.info("****************************");

@@ -39,8 +39,10 @@ public class BrewerServiceImpl implements BrewerService {
 
     }
 
+
     @Override
     public List<Brewer> findAll(Sort sort) {
-        return (List<Brewer>) brewerRepository.findAll(sort);
+        List<Brewer> list = (List<Brewer>) brewerRepository.findAll(sort);
+        return list;
     }
 }

@@ -1,20 +1,34 @@
 package com.sungung;
 
-import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import javax.sql.DataSource;
 
 /**
  * @author PARK Sungung
  * @since 0.0.1
  */
 @SpringBootApplication
+@Configuration
 public class Application {
 
+    @Autowired
+    DataSource dataSource;
+
+    @Bean
+    public JdbcTemplate jdbcTemplate() {
+        return new JdbcTemplate(dataSource);
+    }
+
     public static void main(String[] args) {
-        // exit code will trigger batch
-        System.exit(SpringApplication.exit(
-                SpringApplication.run(Application.class, args)
-        ));
+        SpringApplication app = new SpringApplication(Application.class);
+        app.setShowBanner(false);
+        app.run(args);
+
     }
 }
