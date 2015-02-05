@@ -2,6 +2,7 @@ package com.sungung.data.model;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 /**
  * @author parks
@@ -45,6 +46,17 @@ public class Brewer implements Serializable {
 
     @Column(name = "beerselection")
     private String beerSelection;
+
+    @Column(name = "credit")
+    private BigDecimal credit;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -124,6 +136,14 @@ public class Brewer implements Serializable {
 
     public void setBeerSelection(String beerSelection) {
         this.beerSelection = beerSelection;
+    }
+
+    public BigDecimal getCredit() {
+        return credit;
+    }
+
+    public void setCredit(BigDecimal credit) {
+        this.credit = credit;
     }
 
     @Override

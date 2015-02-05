@@ -7,6 +7,7 @@ import org.springframework.batch.core.repository.JobExecutionAlreadyRunningExcep
 import org.springframework.batch.core.repository.JobInstanceAlreadyCompleteException;
 import org.springframework.batch.core.repository.JobRestartException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -27,6 +28,7 @@ public class JobController {
     JobLauncher jobLauncher;
 
     @Autowired
+    @Qualifier("sendEmailJob")
     Job sendEmailJob;
 
     @Autowired
@@ -39,7 +41,6 @@ public class JobController {
         // but it appears to be not working so passing timestamp whenever job is launched
         Map<String, JobParameter> parameters = new HashMap<String, JobParameter>();
         parameters.put("timestamp", new JobParameter(new Date().getTime()));
-
         jobLauncher.run(sendEmailJob, new JobParameters(parameters));
     }
 
