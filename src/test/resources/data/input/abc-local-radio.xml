@@ -1,0 +1,902 @@
+<?xml version="1.0"?>
+<regions>
+<state name="QLD">
+<station>
+<town>Brisbane</town>
+<website-url>http://www.abc.net.au/brisbane/</website-url>
+<stationname>612 ABC Brisbane</stationname>
+<latitude>-27.47630</latitude>
+<longitude>153.0205</longitude>
+<talkback-number>1300 222 612</talkback-number>
+<enquiries-number>07 3377 5222</enquiries-number>
+<fax-number>07 3377 5612</fax-number>
+<sms-number>0467 922 612</sms-number>
+<street-number>114 Grey Street</street-number>
+<street-suburb>South Brisbane</street-suburb>
+<street-postcode>4101</street-postcode>
+<po-box>GPO Box 9994</po-box>
+<po-suburb>Brisbane</po-suburb>
+<po-postcode>4001</po-postcode>
+</station>
+<station>
+<town>Rockhampton</town>
+<website-url>http://www.abc.net.au/capricornia/</website-url>
+<stationname>ABC Capricornia</stationname>
+<latitude>-23.380056</latitude>
+<longitude>150.515724</longitude>
+<talkback-number>1300 837 222</talkback-number>
+<enquiries-number>07 4924 5111</enquiries-number>
+<fax-number>07 4924 5199</fax-number>
+<sms-number>0487 993 222</sms-number>
+<street-number>236 Quay Street</street-number>
+<street-suburb>Rockhampton</street-suburb>
+<street-postcode>4700</street-postcode>
+<po-box>GPO box 911</po-box>
+<po-suburb>Rockhampton</po-suburb>
+<po-postcode>4700</po-postcode>
+</station>
+<station>
+<town>Cairns</town>
+<website-url>http://www.abc.net.au/farnorth/</website-url>
+<stationname>ABC Far North</stationname>
+<latitude>-16.925397</latitude>
+<longitude>145.775178</longitude>
+<talkback-number>1300 801 222</talkback-number>
+<enquiries-number>(07) 4044 2011</enquiries-number>
+<fax-number>(07) 4044 2099</fax-number>
+<sms-number>0487 993 222</sms-number>
+<street-number>Corner of Upward and Sheridan Streets</street-number>
+<street-suburb>Cairns</street-suburb>
+<street-postcode>4870</street-postcode>
+<po-box>PO Box 932</po-box>
+<po-suburb>Cairns</po-suburb>
+<po-postcode>4870</po-postcode>
+</station>
+<station>
+<town>Gold Coast</town>
+<website-url>http://www.abc.net.au/goldcoast/</website-url>
+<stationname>91.7 ABC Gold Coast</stationname>
+<latitude>-28.043094</latitude>
+<longitude>153.434865</longitude>
+<talkback-number>1300 903 917</talkback-number>
+<enquiries-number>(07) 5595 2917</enquiries-number>
+<fax-number>(07) 5595 2999</fax-number>
+<sms-number>0487 993 222</sms-number>
+<street-number>Cnr Francis St and Gold Coast Highway</street-number>
+<street-suburb>Mermaid Beach</street-suburb>
+<street-postcode>4217</street-postcode>
+<po-box>PO Box 217</po-box>
+<po-suburb>Mermaid Beach</po-suburb>
+<po-postcode>4218</po-postcode>
+</station>
+<station>
+<town>Townsville</town>
+<website-url>http://www.abc.net.au/northqld/</website-url>
+<stationname>630 ABC North Queensland</stationname>
+<latitude>-19.256418</latitude>
+<longitude>146.821526</longitude>
+<talkback-number>1300 630 222</talkback-number>
+<enquiries-number>(07) 4722 3011</enquiries-number>
+<fax-number>(07) 4722 3099</fax-number>
+<sms-number></sms-number>
+<street-number>8 Wickham Street</street-number>
+<street-suburb>Townsville</street-suburb>
+<street-postcode>4810</street-postcode>
+<po-box>PO Box 694</po-box>
+<po-suburb>Townsville</po-suburb>
+<po-postcode>4810</po-postcode>
+</station>
+<station>
+<town>Mount Isa</town>
+<website-url>http://www.abc.net.au/northwest/</website-url>
+<stationname>ABC North West Queensland</stationname>
+<latitude>-20.723053</latitude>
+<longitude>139.493664</longitude>
+<talkback-number>1300 221 065</talkback-number>
+<enquiries-number>07 4744 1311</enquiries-number>
+<fax-number>07 4744 1399</fax-number>
+<sms-number></sms-number>
+<street-number>114 Camooweal Street</street-number>
+<street-suburb>Mount Isa</street-suburb>
+<street-postcode>4825</street-postcode>
+<po-box></po-box>
+<po-suburb></po-suburb>
+<po-postcode></po-postcode>
+</station>
+<station>
+<town>Toowoomba</town>
+<website-url>http://www.abc.net.au/southqld/</website-url>
+<stationname>ABC Southern Queensland</stationname>
+<latitude>-27.560079</latitude>
+<longitude>151.948439</longitude>
+<talkback-number>1300 747 222</talkback-number>
+<enquiries-number>4631 3811</enquiries-number>
+<fax-number>4631 3899</fax-number>
+<sms-number></sms-number>
+<street-number>297 Margaret St</street-number>
+<street-suburb>Toowoomba</street-suburb>
+<street-postcode>4350</street-postcode>
+<po-box>PO Box 358</po-box>
+<po-suburb>Toowoomba</po-suburb>
+<po-postcode>4350</po-postcode>
+</station>
+<station>
+<town>Maroochydore</town>
+<website-url>http://www.abc.net.au/sunshine/</website-url>
+<stationname>90.3 ABC Sunshine Coast</stationname>
+<latitude>-26.658822</latitude>
+<longitude>153.085963</longitude>
+<talkback-number>1300 903 222</talkback-number>
+<enquiries-number>07 5475 5000</enquiries-number>
+<fax-number>07 5475 5099</fax-number>
+<sms-number></sms-number>
+<street-number>15 Carnaby Street</street-number>
+<street-suburb>Maroochydore</street-suburb>
+<street-postcode>4558</street-postcode>
+<po-box>PO Box 1212</po-box>
+<po-suburb>Maroochydore</po-suburb>
+<po-postcode>4558</po-postcode>
+</station>
+<station>
+<town>Mackay</town>
+<website-url>http://www.abc.net.au/tropic/</website-url>
+<stationname>ABC Tropical North</stationname>
+<latitude>-21.138663</latitude>
+<longitude>149.180930</longitude>
+<talkback-number>1300 101 222</talkback-number>
+<enquiries-number>07 4957 1111</enquiries-number>
+<fax-number>07 4957 1199</fax-number>
+<sms-number>0487 993 222</sms-number>
+<street-number>2 Wellington St</street-number>
+<street-suburb>Mackay</street-suburb>
+<street-postcode>4740</street-postcode>
+<po-box>PO Box 127</po-box>
+<po-suburb>Mackay</po-suburb>
+<po-postcode>4740</po-postcode>
+</station>
+<station>
+<town>Longreach</town>
+<website-url>http://www.abc.net.au/westqld/</website-url>
+<stationname>ABC Western Queensland</stationname>
+<latitude>-23.441048</latitude>
+<longitude>144.249184</longitude>
+<talkback-number>1300 540 222</talkback-number>
+<enquiries-number>07 4658 4011</enquiries-number>
+<fax-number>07 4658 4099</fax-number>
+<sms-number></sms-number>
+<street-number>Duck Street</street-number>
+<street-suburb>Longreach</street-suburb>
+<street-postcode>4730</street-postcode>
+<po-box>PO Box 318</po-box>
+<po-suburb>Longreach</po-suburb>
+<po-postcode>4730</po-postcode>
+</station>
+<station>
+<town>Bundaberg</town>
+<website-url>http://www.abc.net.au/widebay/</website-url>
+<stationname>ABC Wide Bay</stationname>
+<latitude>-24.866967</latitude>
+<longitude>152.351068</longitude>
+<talkback-number>1300 221 001</talkback-number>
+<enquiries-number>07 4155 4911</enquiries-number>
+<fax-number>07 4155 4999</fax-number>
+<sms-number>0487 993 222</sms-number>
+<street-number>Shop 6, 58 Woongarra Street</street-number>
+<street-suburb>Bundaberg</street-suburb>
+<street-postcode>4670</street-postcode>
+<po-box>PO Box 1152</po-box>
+<po-suburb>Bundaberg</po-suburb>
+<po-postcode>4670</po-postcode>
+</station>
+</state>
+<state name="NT">
+<station>
+<town>Alice Springs</town>
+<website-url>http://www.abc.net.au/alicesprings/</website-url>
+<stationname>783 ABC Alice Springs</stationname>
+<latitude>-23.711368</latitude>
+<longitude>133.875999</longitude>
+<talkback-number>1300 019 783</talkback-number>
+<enquiries-number>08 8950 4711</enquiries-number>
+<fax-number>08 89504799</fax-number>
+<sms-number>0487 991 057</sms-number>
+<street-number>Cnr Gap Road and Speed Street</street-number>
+<street-suburb>Alice Springs</street-suburb>
+<street-postcode>0870</street-postcode>
+<po-box>PO Box 1144</po-box>
+<po-suburb>Alice Springs</po-suburb>
+<po-postcode>0871</po-postcode>
+</station>
+<station>
+<town>Darwin</town>
+<website-url>http://www.abc.net.au/darwin/</website-url>
+<stationname>105.7 ABC Darwin</stationname>
+<latitude>-12.464276</latitude>
+<longitude>130.844421</longitude>
+<talkback-number>1300 057 222</talkback-number>
+<enquiries-number>08 8943 3222</enquiries-number>
+<fax-number>08 8943 3235</fax-number>
+<sms-number>0487 991 057</sms-number>
+<street-number>1 Cavenagh Street</street-number>
+<street-suburb>Darwin</street-suburb>
+<street-postcode>0800</street-postcode>
+<po-box>GPO Box 9994</po-box>
+<po-suburb>Darwin</po-suburb>
+<po-postcode>0801</po-postcode>
+</station>
+<station>
+<town>Katherine</town>
+<website-url>http://www.abc.net.au/katherine/</website-url>
+<stationname>ABC Katherine</stationname>
+<latitude>-14.464568</latitude>
+<longitude>132.264568</longitude>
+<talkback-number>1300 057 222</talkback-number>
+<enquiries-number>08 8943 3222</enquiries-number>
+<fax-number>08 8943 3235</fax-number>
+<sms-number>0487 991 057</sms-number>
+<street-number>1 Cavenagh Street</street-number>
+<street-suburb>Darwin</street-suburb>
+<street-postcode>0800</street-postcode>
+<po-box>GPO Box 9994</po-box>
+<po-suburb>Darwin</po-suburb>
+<po-postcode>0801</po-postcode>
+</station>
+</state>
+<state name="NSW">
+<station>
+<town>Broken Hill</town>
+<website-url>http://www.abc.net.au/brokenhill/</website-url>
+<stationname>999 ABC Broken Hill</stationname>
+<latitude>-31.955306</latitude>
+<longitude>141.469783</longitude>
+<talkback-number>(08) 8082 4000</talkback-number>
+<enquiries-number>(08) 8082 4011 </enquiries-number>
+<fax-number>(08) 8082 4099 </fax-number>
+<sms-number>0467 922 783</sms-number>
+<street-number>454 Argent Street</street-number>
+<street-suburb>Broken Hill</street-suburb>
+<street-postcode>2880</street-postcode>
+<po-box>PO Box 315</po-box>
+<po-suburb>Broken Hill</po-suburb>
+<po-postcode>2880</po-postcode>
+</station>
+<station>
+<town>Gosford</town>
+<website-url>http://www.abc.net.au/centralcoast/</website-url>
+<stationname>92.5 ABC Central Coast</stationname>
+<latitude>-33.426938</latitude>
+<longitude>151.341843</longitude>
+<talkback-number>1300 925 222</talkback-number>
+<enquiries-number>02 4367 1911</enquiries-number>
+<fax-number>02 4367 1999</fax-number>
+<sms-number>0467 922 684</sms-number>
+<street-number>Erina Fair Shopping Centre, Terrigal Drive</street-number>
+<street-suburb>Erina</street-suburb>
+<street-postcode>2250</street-postcode>
+<po-box>PO Box T252, The Parallel Mall, Erina Fair Shopping Centre, Terrigal Drive</po-box>
+<po-suburb>Erina</po-suburb>
+<po-postcode>2250</po-postcode>
+</station>
+<station>
+<town>Orange</town>
+<website-url>http://www.abc.net.au/centralwest/</website-url>
+<stationname>ABC Central West</stationname>
+<latitude>-33.288293</latitude>
+<longitude>149.107660</longitude>
+<talkback-number>1300 549 222</talkback-number>
+<enquiries-number>(02) 6393 2511</enquiries-number>
+<fax-number>(02) 6393 2599</fax-number>
+<sms-number>0467 922 684</sms-number>
+<street-number>46 Bathurst Rd</street-number>
+<street-suburb>Orange</street-suburb>
+<street-postcode>2800</street-postcode>
+<po-box>PO Box 8549</po-box>
+<po-suburb>East Orange</po-suburb>
+<po-postcode>2800</po-postcode>
+</station>
+<station>
+<town>Coffs Harbour</town>
+<website-url>http://www.abc.net.au/coffscoast/</website-url>
+<stationname>ABC Coffs Coast</stationname>
+<latitude>-30.282279</latitude>
+<longitude>153.128593</longitude>
+<talkback-number>1300 222 923</talkback-number>
+<enquiries-number>02 6650 3611</enquiries-number>
+<fax-number>02 6650 3699</fax-number>
+<sms-number>0467 922 684</sms-number>
+<street-number>24 Gordon Street</street-number>
+<street-suburb>Coffs Harbour</street-suburb>
+<street-postcode>2450</street-postcode>
+<po-box>PO Box 708</po-box>
+<po-suburb>Coffs Harbour</po-suburb>
+<po-postcode>2454</po-postcode>
+</station>
+<station>
+<town>Wollongong</town>
+<website-url>http://www.abc.net.au/illawarra/</website-url>
+<stationname>97.3 ABC Illawarra</stationname>
+<latitude>-34.422452</latitude>
+<longitude>150.891992</longitude>
+<talkback-number>1300 973 300</talkback-number>
+<enquiries-number>02 42245011</enquiries-number>
+<fax-number>02 4224 5099</fax-number>
+<sms-number>0467 922 684</sms-number>
+<street-number>13 Victoria St</street-number>
+<street-suburb>Wollongong</street-suburb>
+<street-postcode>2500</street-postcode>
+<po-box>PO Box Box 973</po-box>
+<po-suburb>Wollongong</po-suburb>
+<po-postcode>2520</po-postcode>
+</station>
+<station>
+<town>Port Macquarie</town>
+<website-url>http://www.abc.net.au/midnorthcoast/</website-url>
+<stationname>ABC Mid North Coast</stationname>
+<latitude>-31.434259</latitude>
+<longitude>152.908481</longitude>
+<talkback-number>1300 662 279</talkback-number>
+<enquiries-number>02 6588 1211 </enquiries-number>
+<fax-number>02 6588 1299</fax-number>
+<sms-number>0467 922 684</sms-number>
+<street-number>51 Lord Street </street-number>
+<street-suburb>Port Macquarie</street-suburb>
+<street-postcode>2444</street-postcode>
+<po-box>PO Box 42</po-box>
+<po-suburb>Port Macquarie</po-suburb>
+<po-postcode>2444</po-postcode>
+</station>
+<station>
+<town>Newcastle</town>
+<website-url>http://www.abc.net.au/newcastle/</website-url>
+<stationname>1233 ABC Newcastle</stationname>
+<latitude>-32.926050</latitude>
+<longitude>151.757412</longitude>
+<talkback-number>1300 331 233</talkback-number>
+<enquiries-number>02 49 221 200</enquiries-number>
+<fax-number>02 49 221 222</fax-number>
+<sms-number>0487 991 233</sms-number>
+<street-number>24 Wood St</street-number>
+<street-suburb>Newcastle West </street-suburb>
+<street-postcode>2302</street-postcode>
+<po-box>PO Box 2205</po-box>
+<po-suburb>Dangar</po-suburb>
+<po-postcode>2309</po-postcode>
+</station>
+<station>
+<town>Tamworth</town>
+<website-url>http://www.abc.net.au/newengland/</website-url>
+<stationname>ABC New England North West</stationname>
+<latitude>-31.093987</latitude>
+<longitude>150.933756</longitude>
+<talkback-number>1300 648 222</talkback-number>
+<enquiries-number>02) 6760 2411</enquiries-number>
+<fax-number>02) 6760 2499</fax-number>
+<sms-number>0467 922 684</sms-number>
+<street-number>470 Peel Street</street-number>
+<street-suburb>Tamworth</street-suburb>
+<street-postcode>2340</street-postcode>
+<po-box>PO Box 558</po-box>
+<po-suburb>Tamworth</po-suburb>
+<po-postcode>2340</po-postcode>
+</station>
+<station>
+<town>Lismore</town>
+<website-url>http://www.abc.net.au/northcoast/</website-url>
+<stationname>ABC North Coast</stationname>
+<latitude>-28.802530</latitude>
+<longitude>153.291963</longitude>
+<talkback-number>1300 659 994</talkback-number>
+<enquiries-number>02 6627 2011</enquiries-number>
+<fax-number>02 6627 2099</fax-number>
+<sms-number>0467 922 684</sms-number>
+<street-number>61 High Street</street-number>
+<street-suburb>Lismore Heights</street-suburb>
+<street-postcode>2480</street-postcode>
+<po-box>PO Box 908</po-box>
+<po-suburb>Lismore</po-suburb>
+<po-postcode>2480</po-postcode>
+</station>
+<station>
+<town>Wagga Wagga</town>
+<website-url>http://www.abc.net.au/riverina/</website-url>
+<stationname>ABC Riverina</stationname>
+<latitude>-35.105242</latitude>
+<longitude>147.368937</longitude>
+<talkback-number>1300 22 1027</talkback-number>
+<enquiries-number>02 6923 4811</enquiries-number>
+<fax-number>02 6923 4899</fax-number>
+<sms-number>0467 922 684</sms-number>
+<street-number>100 Fitzmaurice St</street-number>
+<street-suburb>Wagga Wagga</street-suburb>
+<street-postcode>2650</street-postcode>
+<po-box></po-box>
+<po-suburb></po-suburb>
+<po-postcode></po-postcode>
+</station>
+<station>
+<town>Bega</town>
+<website-url>http://www.abc.net.au/southeastnsw/</website-url>
+<stationname>ABC South East</stationname>
+<latitude>-36.674258</latitude>
+<longitude>149.841853</longitude>
+<talkback-number>1300 810 222</talkback-number>
+<enquiries-number>6491 6011</enquiries-number>
+<fax-number>6491 6099</fax-number>
+<sms-number>0467 922 684</sms-number>
+<street-number>184 Carp Street</street-number>
+<street-suburb>Bega</street-suburb>
+<street-postcode>2550</street-postcode>
+<po-box>PO Box 336</po-box>
+<po-suburb>Bega</po-suburb>
+<po-postcode>2550</po-postcode>
+</station>
+<station>
+<town>Sydney</town>
+<website-url>http://www.abc.net.au/sydney/</website-url>
+<stationname>702 ABC Sydney</stationname>
+<latitude>-33.882123</latitude>
+<longitude>151.201680</longitude>
+<talkback-number>1300 222 702</talkback-number>
+<enquiries-number>(02) 8333 1234</enquiries-number>
+<fax-number>(02) 8333 1203</fax-number>
+<sms-number>0467 922 702</sms-number>
+<street-number>700 Harris St</street-number>
+<street-suburb>Ultimo</street-suburb>
+<street-postcode>2007</street-postcode>
+<po-box>GPO Box 9994</po-box>
+<po-suburb>Sydney</po-suburb>
+<po-postcode>2001</po-postcode>
+</station>
+<station>
+<town>Muswellbrook</town>
+<website-url>http://www.abc.net.au/upperhunter/</website-url>
+<stationname>ABC Upper Hunter</stationname>
+<latitude>-32.263323</latitude>
+<longitude>150.888821</longitude>
+<talkback-number>1300 331 233</talkback-number>
+<enquiries-number>6542 2811</enquiries-number>
+<fax-number>6542 2899</fax-number>
+<sms-number>0467 922 684</sms-number>
+<street-number>36 Brook Street</street-number>
+<street-suburb>Muswellbrook</street-suburb>
+<street-postcode>2333</street-postcode>
+<po-box>PO Box 400</po-box>
+<po-suburb>Muswellbrook</po-suburb>
+<po-postcode>2333</po-postcode>
+</station>
+<station>
+<town>Dubbo</town>
+<website-url>http://www.abc.net.au/westernplains/</website-url>
+<stationname>ABC Western Plains</stationname>
+<latitude>-32.249537</latitude>
+<longitude>148.601983</longitude>
+<talkback-number>1300 22 1071</talkback-number>
+<enquiries-number>02 6881 1811</enquiries-number>
+<fax-number>02 6881 1899</fax-number>
+<sms-number>0467 922 684</sms-number>
+<street-number>45 Wingewarra St</street-number>
+<street-suburb>Dubbo</street-suburb>
+<street-postcode>2830</street-postcode>
+<po-box>PO Box 985</po-box>
+<po-suburb>Dubbo</po-suburb>
+<po-postcode>2830</po-postcode>
+</station>
+</state>
+<state name="TAS">
+<station>
+<town>Hobart</town>
+<website-url>http://www.abc.net.au/hobart/</website-url>
+<stationname>936 ABC Hobart</stationname>
+<latitude>-42.877787</latitude>
+<longitude>147.332632</longitude>
+<talkback-number>1300 222 936</talkback-number>
+<enquiries-number>(03) 6235 3333</enquiries-number>
+<fax-number>(03) 6235 3220</fax-number>
+<sms-number>0438 922 936</sms-number>
+<street-number>1-7 Liverpool Street</street-number>
+<street-suburb>Hobart</street-suburb>
+<street-postcode>7000</street-postcode>
+<po-box>GPO Box 9994</po-box>
+<po-suburb>Hobart</po-suburb>
+<po-postcode>7001</po-postcode>
+</station>
+<station>
+<town>Launceston</town>
+<website-url>http://www.abc.net.au/northtas/</website-url>
+<stationname>ABC Northern Tasmania</stationname>
+<latitude>-41.440209</latitude>
+<longitude>147.146716</longitude>
+<talkback-number>1300 361 688</talkback-number>
+<enquiries-number>(03) 6323 1011</enquiries-number>
+<fax-number>(03) 6323 1099</fax-number>
+<sms-number>0467 922 917</sms-number>
+<street-number>45 Ann Street</street-number>
+<street-suburb>Launceston</street-suburb>
+<street-postcode>7250</street-postcode>
+<po-box>PO Box 201</po-box>
+<po-suburb>Launceston</po-suburb>
+<po-postcode>7250</po-postcode>
+</station>
+</state>
+<state name="VIC">
+<station>
+<town>Ballarat</town>
+<website-url>http://www.abc.net.au/ballarat/</website-url>
+<stationname>107.9 ABC Ballarat</stationname>
+<latitude>-37.562389</latitude>
+<longitude>143.853169</longitude>
+<talkback-number>1300 303 468</talkback-number>
+<enquiries-number>03 5320 1011</enquiries-number>
+<fax-number>03 5320 1099</fax-number>
+<sms-number>0467 842 722</sms-number>
+<street-number>5 Dawson Street South</street-number>
+<street-suburb>Ballarat</street-suburb>
+<street-postcode>3350</street-postcode>
+<po-box>PO Box 7</po-box>
+<po-suburb>Ballarat</po-suburb>
+<po-postcode>3353</po-postcode>
+</station>
+<station>
+<town>Bendigo</town>
+<website-url>http://www.abc.net.au/centralvic/</website-url>
+<stationname>ABC Central Victoria</stationname>
+<latitude>-36.748740</latitude>
+<longitude>144.291880</longitude>
+<talkback-number>1300 813 911</talkback-number>
+<enquiries-number>03 5440 1711</enquiries-number>
+<fax-number>03 5440 1799</fax-number>
+<sms-number>0467 842 722</sms-number>
+<street-number>278 Napier Street</street-number>
+<street-suburb>Bendigo</street-suburb>
+<street-postcode>3550</street-postcode>
+<po-box>PO Box 637</po-box>
+<po-suburb>Bendigo</po-suburb>
+<po-postcode>3550</po-postcode>
+</station>
+<station>
+<town>Sale</town>
+<website-url>http://www.abc.net.au/gippsland/</website-url>
+<stationname>ABC Gippsland</stationname>
+<latitude>-38.109349</latitude>
+<longitude>147.068418</longitude>
+<talkback-number>1300 295 222</talkback-number>
+<enquiries-number>03 5143 5511</enquiries-number>
+<fax-number>03 5143 5599</fax-number>
+<sms-number>0467 842 722</sms-number>
+<street-number>336-340 York Street</street-number>
+<street-suburb>Sale</street-suburb>
+<street-postcode>3850</street-postcode>
+<po-box>PO Box 330</po-box>
+<po-suburb>Sale</po-suburb>
+<po-postcode>3850</po-postcode>
+</station>
+<station>
+<town>Wodonga</town>
+<website-url>http://www.abc.net.au/goulburnmurray/</website-url>
+<stationname>ABC Goulburn Murray</stationname>
+<latitude>-36.112082</latitude>
+<longitude>146.893163</longitude>
+<talkback-number>1300 147 222</talkback-number>
+<enquiries-number>02 6049 2011</enquiries-number>
+<fax-number>02 6049 2099</fax-number>
+<sms-number>0467 842 722</sms-number>
+<street-number>1 High Street</street-number>
+<street-suburb>Wodonga</street-suburb>
+<street-postcode>3690</street-postcode>
+<po-box>PO Box 1063</po-box>
+<po-suburb>Wodonga</po-suburb>
+<po-postcode>3690</po-postcode>
+</station>
+<station>
+<town>Melbourne</town>
+<website-url>http://www.abc.net.au/melbourne/</website-url>
+<stationname>774 ABC Melbourne</stationname>
+<latitude>-37.823692</latitude>
+<longitude>144.966584</longitude>
+<talkback-number>1300 222 774</talkback-number>
+<enquiries-number>(03) 9626 1771</enquiries-number>
+<fax-number>(03) 9626 1774</fax-number>
+<sms-number>0437 774 774</sms-number>
+<street-number>120 Southbank Boulevard</street-number>
+<street-suburb>Southbank</street-suburb>
+<street-postcode>3006</street-postcode>
+<po-box>GPO Box 9994</po-box>
+<po-suburb>Melbourne</po-suburb>
+<po-postcode>3001</po-postcode>
+</station>
+<station>
+<town>Mildura</town>
+<website-url>http://www.abc.net.au/milduraswanhill/</website-url>
+<stationname>ABC Mildura - Swan Hill</stationname>
+<latitude>-34.183363</latitude>
+<longitude>142.158122</longitude>
+<talkback-number>1300 043 222</talkback-number>
+<enquiries-number>03 5022 4511</enquiries-number>
+<fax-number>03 5022 4599</fax-number>
+<sms-number>0467 842 722</sms-number>
+<street-number>73 Pine Avenue</street-number>
+<street-suburb>Mildura</street-suburb>
+<street-postcode>3500</street-postcode>
+<po-box>PO Box 10083</po-box>
+<po-suburb>Mildura</po-suburb>
+<po-postcode>3502</po-postcode>
+</station>
+<station>
+<town>Shepparton</town>
+<website-url>http://www.abc.net.au/shepparton/</website-url>
+<stationname>97.7 ABC Goulburn Murray</stationname>
+<latitude>-36.381171</latitude>
+<longitude>145.399290</longitude>
+<talkback-number>1300 977 222</talkback-number>
+<enquiries-number>03 5820 4011</enquiries-number>
+<fax-number>03 5820 4099</fax-number>
+<sms-number>0467 842 722</sms-number>
+<street-number>50A Wyndham Street</street-number>
+<street-suburb>Shepparton</street-suburb>
+<street-postcode>3630</street-postcode>
+<po-box>PO Box 1922</po-box>
+<po-suburb>Shepparton</po-suburb>
+<po-postcode>3630</po-postcode>
+</station>
+<station>
+<town>Warrnambool</town>
+<website-url>http://www.abc.net.au/southwestvic/</website-url>
+<stationname>ABC South West Victoria</stationname>
+<latitude>-38.382236</latitude>
+<longitude>142.481041</longitude>
+<talkback-number>1300 001 602</talkback-number>
+<enquiries-number>03 5560 3111</enquiries-number>
+<fax-number>03 5560 3199</fax-number>
+<sms-number>0467 842 722</sms-number>
+<street-number>166B Koroit Street</street-number>
+<street-suburb>Warrnambool</street-suburb>
+<street-postcode>3280</street-postcode>
+<po-box>PO Box 310</po-box>
+<po-suburb>Warrnambool</po-suburb>
+<po-postcode>3280</po-postcode>
+</station>
+<station>
+<town>Horsham</town>
+<website-url>http://www.abc.net.au/westernvic/</website-url>
+<stationname>ABC Western Victoria</stationname>
+<latitude>-36.711625</latitude>
+<longitude>142.200623</longitude>
+<talkback-number>1300 594 222</talkback-number>
+<enquiries-number>03 5381 5311</enquiries-number>
+<fax-number>03 5381 5399</fax-number>
+<sms-number>0467 842 722</sms-number>
+<street-number>Shop 3 / 148 Baillie St</street-number>
+<street-suburb>Horsham</street-suburb>
+<street-postcode>3400</street-postcode>
+<po-box>PO Box 506</po-box>
+<po-suburb>Horsham</po-suburb>
+<po-postcode>3402</po-postcode>
+</station>
+</state>
+<state name="WA">
+<station>
+<town>Esperance</town>
+<website-url>http://www.abc.net.au/esperance/</website-url>
+<stationname>ABC Goldfields-Esperance</stationname>
+<latitude>-33.860365</latitude>
+<longitude>121.891482</longitude>
+<talkback-number>1300 633 837</talkback-number>
+<enquiries-number>08 9083 2011</enquiries-number>
+<fax-number>08 9083 2099</fax-number>
+<sms-number>0448 922 604</sms-number>
+<street-number>80b Windich Street</street-number>
+<street-suburb>Esperance</street-suburb>
+<street-postcode>6450</street-postcode>
+<po-box>PO Box 230</po-box>
+<po-suburb>Esperance</po-suburb>
+<po-postcode>6450</po-postcode>
+</station>
+<station>
+<town>Kalgoorlie-Boulder</town>
+<website-url>http://www.abc.net.au/goldfields/</website-url>
+<stationname>ABC Goldfields-Esperance</stationname>
+<latitude>-30.747667</latitude>
+<longitude>121.472302</longitude>
+<talkback-number>1300 525 222</talkback-number>
+<enquiries-number>08 9093 7011</enquiries-number>
+<fax-number>08 9093 7099</fax-number>
+<sms-number>0448 922 604</sms-number>
+<street-number>353 Hannan Street</street-number>
+<street-suburb>Kalgoorlie</street-suburb>
+<street-postcode>6430</street-postcode>
+<po-box>PO Box 125</po-box>
+<po-suburb>Kalgoorlie</po-suburb>
+<po-postcode>6430</po-postcode>
+</station>
+<station>
+<town>Albany</town>
+<website-url>http://www.abc.net.au/greatsouthern/</website-url>
+<stationname>ABC Great Southern</stationname>
+<latitude>-35.020683</latitude>
+<longitude>117.884417</longitude>
+<talkback-number>1300 560 222</talkback-number>
+<enquiries-number>08 984 24011</enquiries-number>
+<fax-number>08 9842 4099</fax-number>
+<sms-number>0448 922 604</sms-number>
+<street-number>2 St Emilie Way</street-number>
+<street-suburb>Albany</street-suburb>
+<street-postcode>6330</street-postcode>
+<po-box></po-box>
+<po-suburb></po-suburb>
+<po-postcode></po-postcode>
+</station>
+<station>
+<town>Broome</town>
+<website-url>http://www.abc.net.au/kimberley/</website-url>
+<stationname>ABC Kimberley</stationname>
+<latitude>-17.961033</latitude>
+<longitude>122.240700</longitude>
+<talkback-number>1300 242 675</talkback-number>
+<enquiries-number>08 9191 3011</enquiries-number>
+<fax-number>08 9191 3099</fax-number>
+<sms-number>0448 922 604</sms-number>
+<street-number>23 Hamersley St</street-number>
+<street-suburb>Broome</street-suburb>
+<street-postcode>6725</street-postcode>
+<po-box>PO Box 217</po-box>
+<po-suburb>Broome</po-suburb>
+<po-postcode>6725</po-postcode>
+</station>
+<station>
+<town>Karratha</town>
+<website-url>http://www.abc.net.au/northwestwa/</website-url>
+<stationname>ABC North West WA</stationname>
+<latitude>-20.737262</latitude>
+<longitude>116.850060</longitude>
+<talkback-number>1300 510 222</talkback-number>
+<enquiries-number>08 9183 5011</enquiries-number>
+<fax-number>08 9183 5099</fax-number>
+<sms-number>0448 922 604</sms-number>
+<street-number>Degrey Place</street-number>
+<street-suburb>Karratha</street-suburb>
+<street-postcode>6714</street-postcode>
+<po-box>PO Box 994</po-box>
+<po-suburb>Karratha</po-suburb>
+<po-postcode>6714</po-postcode>
+</station>
+<station>
+<town>Perth</town>
+<website-url>http://www.abc.net.au/perth/</website-url>
+<stationname>720 ABC Perth</stationname>
+<latitude>-31.951983</latitude>
+<longitude>115.873146</longitude>
+<talkback-number>1300 222 720</talkback-number>
+<enquiries-number>08 9220 2700</enquiries-number>
+<fax-number>08 9220 2727</fax-number>
+<sms-number>0437 922 720</sms-number>
+<street-number>30 Fielder St</street-number>
+<street-suburb>East Perth</street-suburb>
+<street-postcode>6004</street-postcode>
+<po-box>GPO Box 9994</po-box>
+<po-suburb>Perth</po-suburb>
+<po-postcode>6848</po-postcode>
+</station>
+<station>
+<town>Bunbury</town>
+<website-url>http://www.abc.net.au/southwestwa/</website-url>
+<stationname>ABC South West WA</stationname>
+<latitude>-33.325520</latitude>
+<longitude>115.635320</longitude>
+<talkback-number>1300 545 222</talkback-number>
+<enquiries-number>9792 2711</enquiries-number>
+<fax-number>9792 2799</fax-number>
+<sms-number>0448 922 604</sms-number>
+<street-number>72 Wittenoom St</street-number>
+<street-suburb>Bunbury</street-suburb>
+<street-postcode>6230</street-postcode>
+<po-box>PO Box 242</po-box>
+<po-suburb>Bunbury</po-suburb>
+<po-postcode>6231</po-postcode>
+</station>
+<station>
+<town>Geraldton</town>
+<website-url>http://www.abc.net.au/wheatbelt/</website-url>
+<stationname>ABC Mid West and Wheatbelt</stationname>
+<latitude>-28.773068</latitude>
+<longitude>114.611265</longitude>
+<talkback-number>1300 501 222</talkback-number>
+<enquiries-number>08 9923 4111</enquiries-number>
+<fax-number>08 9923 4199</fax-number>
+<sms-number>0448 922 604</sms-number>
+<street-number>245 Marine Terrace</street-number>
+<street-suburb>Geraldton</street-suburb>
+<street-postcode>6530</street-postcode>
+<po-box>PO Box 211</po-box>
+<po-suburb>Geraldton</po-suburb>
+<po-postcode>6530</po-postcode>
+</station>
+</state>
+<state name="SA">
+<station>
+<town>Adelaide</town>
+<website-url>http://www.abc.net.au/adelaide/</website-url>
+<stationname>891 ABC Adelaide</stationname>
+<latitude>-34.887844</latitude>
+<longitude>138.613807</longitude>
+<talkback-number>1300 222 891</talkback-number>
+<enquiries-number>08 8343 4000</enquiries-number>
+<fax-number>08 8343 4402</fax-number>
+<sms-number>0467 922 891</sms-number>
+<street-number>85 North East Road</street-number>
+<street-suburb>Collinswood</street-suburb>
+<street-postcode>5081</street-postcode>
+<po-box>GPO Box 9994</po-box>
+<po-suburb>Adelaide</po-suburb>
+<po-postcode>5001</po-postcode>
+</station>
+<station>
+<town>Port Lincoln</town>
+<website-url>http://www.abc.net.au/eyre/</website-url>
+<stationname>1485 ABC Eyre Peninsula &amp; West Coast </stationname>
+<latitude>-34.719869</latitude>
+<longitude>135.857277</longitude>
+<talkback-number>(08) 8683 2600</talkback-number>
+<enquiries-number>(08) 86832611</enquiries-number>
+<fax-number>(08) 8683 2699</fax-number>
+<sms-number>0467 922 783</sms-number>
+<street-number>First Floor, Civic Centre 60 Tasman Terrace</street-number>
+<street-suburb>Port Lincoln</street-suburb>
+<street-postcode>5606</street-postcode>
+<po-box>PO Box 679</po-box>
+<po-suburb>Port Lincoln</po-suburb>
+<po-postcode>5606</po-postcode>
+</station>
+<station>
+<town>Port Pirie</town>
+<website-url>http://www.abc.net.au/northandwest/</website-url>
+<stationname>639 ABC North and West </stationname>
+<latitude>-33.190464</latitude>
+<longitude>138.008891</longitude>
+<talkback-number>1300 160 222</talkback-number>
+<enquiries-number>(08) 8638 4811</enquiries-number>
+<fax-number>(08) 8638 4899</fax-number>
+<sms-number>0467 922 783</sms-number>
+<street-number>85 Grey Terrace</street-number>
+<street-suburb>Port Pirie</street-suburb>
+<street-postcode>5540</street-postcode>
+<po-box>PO Box 289</po-box>
+<po-suburb>Port Pirie</po-suburb>
+<po-postcode>5540</po-postcode>
+</station>
+<station>
+<town>Renmark</town>
+<website-url>http://www.abc.net.au/riverland/</website-url>
+<stationname>1062 ABC Riverland</stationname>
+<latitude>-34.170957</latitude>
+<longitude>140.750731</longitude>
+<talkback-number>(08) 8586 1300</talkback-number>
+<enquiries-number>(08) 8586 1300</enquiries-number>
+<fax-number> (08) 8586 1399</fax-number>
+<sms-number>0467 922 783</sms-number>
+<street-number>Ral Ral Avenue</street-number>
+<street-suburb>Renmark</street-suburb>
+<street-postcode>5341</street-postcode>
+<po-box>PO Box 20</po-box>
+<po-suburb>Renmark </po-suburb>
+<po-postcode>5341</po-postcode>
+</station>
+<station>
+<town>Mt Gambier</town>
+<website-url>http://www.abc.net.au/southeastsa/</website-url>
+<stationname>1161 ABC South East</stationname>
+<latitude>-37.824908</latitude>
+<longitude>140.782210891</longitude>
+<talkback-number>08 8724 1000</talkback-number>
+<enquiries-number>08 8724 1011</enquiries-number>
+<fax-number>08 8724 1099</fax-number>
+<sms-number>0467 922 783</sms-number>
+<street-number>31 Penola Road</street-number>
+<street-suburb>Mount Gambier</street-suburb>
+<street-postcode>5290</street-postcode>
+<po-box>PO Box 1448</po-box>
+<po-suburb>Mount Gambier</po-suburb>
+<po-postcode>5290</po-postcode>
+</station>
+</state>
+</regions>
+

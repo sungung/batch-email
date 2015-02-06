@@ -10,7 +10,6 @@ import org.springframework.batch.core.configuration.annotation.JobBuilderFactory
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
 import org.springframework.batch.core.configuration.annotation.StepScope;
 import org.springframework.batch.core.launch.support.RunIdIncrementer;
-import org.springframework.batch.core.repository.JobRepository;
 import org.springframework.batch.item.ItemProcessor;
 import org.springframework.batch.item.ItemReader;
 import org.springframework.batch.item.ItemWriter;
@@ -49,28 +48,6 @@ public class EmailJobConfig {
     @Autowired
     private BrewerService brewerService;
 
-    @Autowired
-    private JobRepository jobRepository;
-
-    /*
-    @Bean
-    public SimpleAsyncTaskExecutor taskExecutor() {
-        return new SimpleAsyncTaskExecutor();
-    }
-
-    @Bean
-    public JobDetailBean jobDetailBean() {
-        return new JobDetailBean();
-    }
-
-    @Bean
-    public SimpleJobLauncher jobLauncher() {
-        SimpleJobLauncher jobLauncher = new SimpleJobLauncher();
-        jobLauncher.setJobRepository(jobRepository);
-        jobLauncher.setTaskExecutor(taskExecutor());
-        return jobLauncher;
-    }*/
-
     @Bean
     public Job sendEmailJob() {
         return jobBuilderFactory
@@ -98,17 +75,12 @@ public class EmailJobConfig {
         return new StepExecutionListener() {
             @Override
             public void beforeStep(StepExecution stepExecution) {
-                LOG.info("   %% Before step %%");
-                LOG.info(stepExecution.toString());
-                LOG.info("   %%%%%%%%%%%%%%%%%");
             }
-
             @Override
             public ExitStatus afterStep(StepExecution stepExecution) {
-                LOG.info("   %% After step %%");
+                LOG.info("******** After Step ********");
                 LOG.info(stepExecution.toString());
-                LOG.info("   %%%%%%%%%%%%%%%%");
-                return ExitStatus.COMPLETED;  //To change body of implemented methods use File | Settings | File Templates.
+                return ExitStatus.COMPLETED;
             }
         };
     }
@@ -132,6 +104,7 @@ public class EmailJobConfig {
                 message.addRecipient(Message.RecipientType.TO, new InternetAddress(brewer.getEmail()));
                 message.setSubject("To Victoria Brewer");
                 message.setText("Thank you for your wonderful bear");
+                LOG.info("processor --> " + message.toString());
                 return message;
             }
         };
@@ -154,17 +127,12 @@ public class EmailJobConfig {
         return new JobExecutionListener() {
             @Override
             public void beforeJob(JobExecution jobExecution) {
-
-                LOG.info("******** Before Job ********");
-                LOG.info(jobExecution.toString());
-                LOG.info("****************************");
             }
 
             @Override
             public void afterJob(JobExecution jobExecution) {
                 LOG.info("******** After Job ********");
                 LOG.info(jobExecution.toString());
-                LOG.info("***************************");
             }
         };
     }
