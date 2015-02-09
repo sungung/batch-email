@@ -1,5 +1,6 @@
 package com.sungung.web;
 
+import com.sungung.data.service.BrewerService;
 import org.springframework.batch.core.*;
 import org.springframework.batch.core.explore.JobExplorer;
 import org.springframework.batch.core.launch.JobLauncher;
@@ -11,11 +12,13 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.context.support.WebApplicationContextUtils;
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.view.jasperreports.AbstractJasperReportsSingleFormatView;
+import org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView;
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import javax.servlet.http.HttpServletRequest;
+import java.util.*;
 
 /**
  * @author PARK Sungung
@@ -34,6 +37,9 @@ public class JobController {
     @Autowired
     JobExplorer jobExplorer;
 
+    @Autowired
+    BrewerService brewerService;
+
     @RequestMapping("/sendEmailJob")
     public void runningJob() throws JobInstanceAlreadyCompleteException, JobParametersInvalidException, JobRestartException, JobExecutionAlreadyRunningException {
 
@@ -48,4 +54,24 @@ public class JobController {
     public List<JobInstance> getJobInstances(@PathVariable String jobName) {
         return jobExplorer.getJobInstances(jobName, 0, 99);
     }
+
+    @RequestMapping("/jasper")
+    public ModelAndView report(HttpServletRequest request) {
+
+        Map<String, Object> model = new HashMap<String, Object>();
+        model.put("REPORT.SOURCE", brewerService.findAll(null));
+
+        AbstractJasperReportsSingleFormatView jasperReportsSingleFormatView = new JasperReportsPdfView();
+        Properties header = new Properties();
+        header.put("Content-Disposition", "inline; filename=report.pdf");
+        jasperReportsSingleFormatView.setHeaders(header);
+        jasperReportsSingleFormatView.setUrl("classpath:jrxml/list.jrxml");
+        jasperReportsSingleFormatView.setApplicationContext(
+                WebApplicationContextUtils.getRequiredWebApplicationContext(request.getSession().getServletContext())
+        );
+        return new ModelAndView(jasperReportsSingleFormatView, model);
+
+
+    }
+
 }

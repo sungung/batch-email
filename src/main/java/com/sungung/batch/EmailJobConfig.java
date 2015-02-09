@@ -2,6 +2,10 @@ package com.sungung.batch;
 
 import com.sungung.data.model.Brewer;
 import com.sungung.data.service.BrewerService;
+import net.sf.jasperreports.engine.JasperExportManager;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.batch.core.*;
@@ -18,13 +22,23 @@ import org.springframework.batch.item.support.IteratorItemReader;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.mail.javamail.JavaMailSender;
 
+import javax.activation.DataHandler;
+import javax.activation.DataSource;
 import javax.mail.Message;
+import javax.mail.Multipart;
 import javax.mail.Session;
 import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
+import javax.mail.util.ByteArrayDataSource;
+import java.io.ByteArrayOutputStream;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author PARK Sungung
@@ -53,7 +67,7 @@ public class EmailJobConfig {
         return jobBuilderFactory
                 .get("sendEmailJob")
                 .incrementer(new RunIdIncrementer())
-                .listener(sendEmailListener())
+                //.listener(sendEmailListener())
                 .start(sendEmailStep())
                 .build();
     }
@@ -67,6 +81,8 @@ public class EmailJobConfig {
                 .processor(brewerToMimeMessageProcessor())
                 .writer(brewerWriter())
                 .listener(logSendEmailListener())
+                //.taskExecutor(new SimpleAsyncTaskExecutor())
+                //.throttleLimit(10)
                 .build();
     }
 
@@ -78,8 +94,10 @@ public class EmailJobConfig {
             }
             @Override
             public ExitStatus afterStep(StepExecution stepExecution) {
-                LOG.info("******** After Step ********");
+                LOG.info("******** Step >>>> ********");
                 LOG.info(stepExecution.toString());
+                LOG.info(Thread.currentThread().getId());
+                LOG.info("******** <<<< Step ********");
                 return ExitStatus.COMPLETED;
             }
         };
@@ -99,12 +117,45 @@ public class EmailJobConfig {
         return new ItemProcessor<Brewer, MimeMessage>() {
             @Override
             public MimeMessage process(Brewer brewer) throws Exception {
+
+                Map<String, Object> model = new HashMap<String, Object>();
+                model.put("REPORT.SOURCE", brewerService.findAll(null));
+
+                ClassPathResource jasperPath = new ClassPathResource("jrxml/list.jasper");
+
+                JasperPrint jasperPrint = JasperFillManager.fillReport((new ClassPathResource("jrxml/list.jasper")).getInputStream(),
+                        new HashMap<String, Object>(),
+                        new JRBeanCollectionDataSource(brewerService.findAll(null)));
+
+                ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+                JasperExportManager.exportReportToPdfStream(jasperPrint, byteArrayOutputStream);
+                DataSource attchement =  new ByteArrayDataSource(byteArrayOutputStream.toByteArray(), "application/pdf");
+
                 MimeMessage message = new MimeMessage(Session.getDefaultInstance(System.getProperties()));
+
                 message.setFrom(new InternetAddress("admin@sungung.com"));
                 message.addRecipient(Message.RecipientType.TO, new InternetAddress(brewer.getEmail()));
                 message.setSubject("To Victoria Brewer");
-                message.setText("Thank you for your wonderful bear");
-                LOG.info("processor --> " + message.toString());
+
+                MimeBodyPart messagePart = new MimeBodyPart();
+                messagePart.setText("Please find Victoria brewer friends");
+
+                MimeBodyPart attachementPart = new MimeBodyPart();
+                attachementPart.setDataHandler(new DataHandler(attchement));
+                attachementPart.setFileName("brewer list.pdf");
+
+                Multipart multipart = new MimeMultipart();
+                multipart.addBodyPart(messagePart);
+                multipart.addBodyPart(attachementPart);
+                message.setContent(multipart);
+
+                /*
+                MimeMessageHelper mimeMessageHelper = new MimeMessageHelper(message, true);
+                mimeMessageHelper.setFrom("admin@sungung.com");
+                mimeMessageHelper.setTo(brewer.getEmail());
+                mimeMessageHelper.setSubject("To Victoria Brewer");
+                mimeMessageHelper.addAttachment("Victoria brewer list.pdf", attchement);
+                */
                 return message;
             }
         };
