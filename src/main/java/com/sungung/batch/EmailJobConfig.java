@@ -149,13 +149,6 @@ public class EmailJobConfig {
                 multipart.addBodyPart(attachementPart);
                 message.setContent(multipart);
 
-                /*
-                MimeMessageHelper mimeMessageHelper = new MimeMessageHelper(message, true);
-                mimeMessageHelper.setFrom("admin@sungung.com");
-                mimeMessageHelper.setTo(brewer.getEmail());
-                mimeMessageHelper.setSubject("To Victoria Brewer");
-                mimeMessageHelper.addAttachment("Victoria brewer list.pdf", attchement);
-                */
                 return message;
             }
         };
