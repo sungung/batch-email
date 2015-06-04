@@ -1,8 +1,9 @@
 package com.sungung.batch;
 
 import com.sungung.data.model.StationType;
-import org.springframework.batch.core.Job;
-import org.springframework.batch.core.Step;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.batch.core.*;
 import org.springframework.batch.core.configuration.annotation.JobBuilderFactory;
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
 import org.springframework.batch.item.ItemReader;
@@ -29,6 +30,8 @@ import java.net.MalformedURLException;
 @Configuration
 public class XmlToFlatFileJobConfig {
 
+    private final static Logger logger = LoggerFactory.getLogger(XmlToFlatFileJobConfig.class);
+
     @Autowired
     JobBuilderFactory jobBuilderFactory;
 
@@ -47,10 +50,31 @@ public class XmlToFlatFileJobConfig {
     public Step xmlJobStep(ItemReader xmlItemReader, ItemWriter xmlItemWriter) {
         return stepBuilderFactory
                 .get("fileJobStep")
-                .chunk(5)
+                .chunk(1)
                 .reader(xmlItemReader)
                 .writer(xmlItemWriter)
+                .listener(snailListener())
                 .build();
+    }
+
+    @Bean
+    public StepExecutionListener snailListener() {
+        return new StepExecutionListener() {
+            @Override
+            public void beforeStep(StepExecution stepExecution) {
+                try {
+                    //Make sluggish job for the restart testing
+                    Thread.sleep(3000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+                }
+            }
+
+            @Override
+            public ExitStatus afterStep(StepExecution stepExecution) {
+                return null;  //To change body of implemented methods use File | Settings | File Templates.
+            }
+        };
     }
 
     @Bean
@@ -66,6 +90,7 @@ public class XmlToFlatFileJobConfig {
     public Jaxb2Marshaller stationMarshaller() {
         Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
         marshaller.setClassesToBeBound(StationType.class);
+        //make sluggish job for resume and restart job testing
         return marshaller;
     }
 
