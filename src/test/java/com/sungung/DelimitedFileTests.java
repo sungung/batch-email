@@ -47,11 +47,11 @@ public class DelimitedFileTests {
     public void testLaunchJob() throws Exception {
         JobExecution jobExecution = jobLauncher.run(job, getJobParameters("/data/input/InputTwoBrewers.txt"));
         assertEquals(BatchStatus.COMPLETED, jobExecution.getStatus());
-        //verifyOutput(2);
+        verifyOutput(2);
 
         jobExecution = jobLauncher.run(job, getJobParameters("/data/input/InputThreeBrewers.txt"));
         assertEquals(BatchStatus.COMPLETED, jobExecution.getStatus());
-        //verifyOutput(3);
+        verifyOutput(3);
 
     }
 

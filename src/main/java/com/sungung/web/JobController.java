@@ -55,6 +55,11 @@ public class JobController {
         return jobExplorer.getJobInstances(jobName, 0, 99);
     }
 
+    /***
+     * View pdf report in browser e.g. http://locahost:18080/jasper
+     * @param request
+     * @return
+     */
     @RequestMapping("/jasper")
     public ModelAndView report(HttpServletRequest request) {
 
